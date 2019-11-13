@@ -23,19 +23,48 @@ $(".counter-number").text("Your score:" + counter);
 $(".red").on("click", function() {
 counter = counter + redCrystal;
 $(".counter-number").text("Your score:" + counter);
-})
+if (counter === targetNumber) {
+    wins ++
+    $(".wins-text").text("Wins:" + wins);
+} else if(counter > targetNumber) 
+    losses ++
+    $(".losses-text").text("Losses:" + losses);
+});
+
 // make blue crystal clickable
 $(".blue").on("click", function() {
     counter = counter + blueCrystal;
     $(".counter-number").text("Your score:" + counter);
-    })
+    if (counter === targetNumber) {
+        wins ++
+        $(".wins-text").text("Wins:" + wins);
+    } else if(counter > targetNumber) 
+        losses ++
+        $(".losses-text").text("Losses:" + losses);
+});
+
 // make yellow crystal clickable
 $(".yellow").on("click", function() {
     counter = counter + yellowCrystal;
     $(".counter-number").text("Your score:" + counter);
-    })
-// make green crystal clickable
+    if (counter === targetNumber) {
+        wins ++
+        $(".wins-text").text("Wins:" + wins);
+    } else if(counter > targetNumber) 
+        losses ++
+        $(".losses-text").text("Losses:" + losses);
+    });
+
+    // make green crystal clickable
 $(".green").on("click", function() {
     counter = counter + greenCrystal;
     $(".counter-number").text("Your score:" + counter);
-    })
+    if (counter === targetNumber) {
+        wins ++
+        $(".wins-text").text("Wins:" + wins);
+    } else if(counter > targetNumber) 
+        losses ++
+        $(".losses-text").text("Losses:" + losses);
+    });
+
+    // Create a restart function
