@@ -1,3 +1,19 @@
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    
+}
+
+.instructions {
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    background-color: grey;
+}
+
 .crystal {
 
     width: 200px;
