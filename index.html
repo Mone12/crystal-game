@@ -14,21 +14,86 @@
     
   </head>
   <body>
-      <h1>CrystalCollector Game!</h1>
-      <div class="instructions">
-        <p>A random number will be given at the start of the game. The goal of the game is to match your score with the target number by clicking on the crystals, which each has a number value, to add to your score. If your score matches the target number, you win. If your score goes over the target number, you lose. Press any crystal to Begin!</p>
+      <!-- Header -->
+      <!-- First row -->
+      <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <h1>CrystalCollector Game!</h1>
+          </div>
+          <div class="col-2"></div>
       </div>
-        <h3>Number to Guess: <span id="number-to-guess"></span></h3>
 
-   <div id="crystals">
-       <img class="red crystal" src="assets/images/redcrystal.jpg">
-       <img class="blue crystal" src="assets/images/bluecrystal.jpg">
-       <img class="yellow crystal" src="assets/images/yellowcrystal.jpg">
-       <img class="green crystal" src="assets/images/greencrystal.jpg">
+      <!-- second row -->
+      <!-- game instructions -->
+      <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <p>A random number will be given at the start of the game. The goal of the game is to match your score with the target number by clicking on the crystals, which each has a number value, to add to your score. If your score matches the target number, you win. If your score goes over the target number, you lose. Press any crystal to Begin!</p>
+            </div>
+            <div class="col-2"></div>
+      </div>
+
+      <!-- Third row -->
+      <!-- computer score -->
+      <div class="row">
+          <div class="col-3"></div>
+          <div class="col-6">
+            <h3>Number to Guess:</h3> 
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <h3><span id="number-to-guess"></span></h3>
+                    </div>
+                    <div class="col-3"></div>
+                </div>
+            </div>
+          <div class="col-3"></div>
+      </div>
+
+      <!-- Fourth row -->
+      <!-- Wins and losses -->
+      <div class="row">
+          
+        <div class="col-1"></div>
+          <div class="col-2">
+            <p class="wins-text winlose"></p>
+          </div>
+          <div class="col-6"></div>
+          <div class="col-2">
+            <p class="losses-text winlose"></p>
+          </div>
+        <div class="col-1"></div>
+
+      </div>
+      
+
+      <!-- fifth row -->
+      <div class="row crystal-images" id="crystals">
+          <div class="col-3">
+            <img class="red crystal" src="assets/images/greencrystal.jpg">
+          </div>
+          <div class="col-3">
+                <img class="blue crystal" src="assets/images/redcrystal.jpg">
+          </div>
+          <div class="col-3">
+                <img class="yellow crystal" src="assets/images/bluecrystal.jpg">
+          </div>
+          <div class="col-3">
+                <img class="green crystal img-thumbnail" src="assets/images/yellowcrystal.jpg">
+            </div>
+          
+            
+       </div>
+  
+   <div class="row align-items-end">
+       <div class="col"></div>
+       <div class="col">
+            <h3 class="counter-number score"></h3>
+       </div>
+       <div class="col"></div>
    </div>
-   <p class="counter-number"></p>
-   <p class="wins-text"></p>
-   <p class="losses-text"></p>
+   
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

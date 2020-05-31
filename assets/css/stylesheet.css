@@ -1,9 +1,18 @@
+body {
+     background-image: url('../images/sailor-moon-wallpapers-26081-1641746.jpg');
+     background-size: cover;
+   
+     background-position: center;
+     background-repeat: no-repeat;
+}
 h1 {
     text-align: center;
 }
 
 h3 {
     text-align: center;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.776);
     
 }
 
@@ -11,12 +20,32 @@ h3 {
     text-align: center;
     width: 600px;
     margin: auto;
-    background-color: grey;
+    background: rgba(255, 255, 255, 0.776);
+    
 }
 
+p {
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.776);
+}
+
+.winlose {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+    height:80px;
+}
+
+.crystal-images {
+    
+    text-align: center;
+    margin-top: 190px;
+    
+    background: rgba(255, 255, 255, 0.776);
+}
 .crystal {
-
-    width: 200px;
-    height: 200px;
-    padding: 20px;
+    
+    width: 160px;
+    height: 160px;
 }
+
